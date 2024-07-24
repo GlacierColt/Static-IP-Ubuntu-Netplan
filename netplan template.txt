@@ -1,0 +1,10 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    <network adapter>:
+      addresses:
+        - <ip>/<subnet(24)>
+      gateway4: <gateway ip>
+      nameservers:
+        addresses: [<DNS1>, <DNS2>, <DNS3>]
